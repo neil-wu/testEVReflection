@@ -63,3 +63,5 @@ The following is the detail backtrace:
 (lldb) 
 ```
 
+As you can see the first non EVReflection line is ast frame #18 where a Mirror of the object is created. The crash is within the code that is creating the Mirror. This looks like a Swift bug.
+I found this issue reported at: https://bugs.swift.org/browse/SR-1036
